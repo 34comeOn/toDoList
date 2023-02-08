@@ -30,8 +30,7 @@ export const DayCard = ({date}: {date:string}) => {
             <CardDate isOpened={isOpened}>
                 {date}
             </CardDate>
-            {/* <span className="card__date">{date} Tasks</span> */}
-            <CoveredButton width="25px" height="25px" onClick={toggleClickHandle} isOpened={isOpened}>
+            <CoveredButton width="25px" height="25px" onClick={toggleClickHandle} isOpened={isOpened} movable={true}>
                 <>
                     {!isOpened && <img src={openCardButton} alt="Open task list button" />}
                     {isOpened && <img src={closeCardButton} alt="Close task list button" />}

@@ -16,3 +16,13 @@
     text-align: left;
     font-family: $ff-placeholder-main-regular;
 }
+
+.header__settingsButton:hover {
+    animation: spin 2s infinite linear;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }

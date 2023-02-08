@@ -1,8 +1,8 @@
 import React from "react";
 import { Indicator } from "../indicator";
 import { StyledTaskItem } from "./styledTaskItem";
-import Switch from '@mui/material/Switch';
 import "./style.scss";
+import { CustomSwitch } from "../customSwitch";
 
 export const TaskItem =  () => {
     return(
@@ -16,7 +16,7 @@ export const TaskItem =  () => {
                     a lot of text
                 </p>
             </div>
-            <Switch />
+            <CustomSwitch />
         </StyledTaskItem>
     )
 }

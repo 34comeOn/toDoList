@@ -7,11 +7,12 @@ export interface ICoveredButtonProps {
     children: JSX.Element;
     onClick: ()=> void;
     isOpened: boolean;
+    movable: boolean;
 }
 
-export const CoveredButton = ({width, height, children, onClick, isOpened}: ICoveredButtonProps) => {
+export const CoveredButton = ({width, height, children, onClick, isOpened, movable}: ICoveredButtonProps) => {
     return (
-        <StyledCoveredButton width={width} height={height} onClick={onClick} isOpened={isOpened}>
+        <StyledCoveredButton width={width} height={height} onClick={onClick} isOpened={isOpened} movable={movable}>
             {children}
         </StyledCoveredButton>
     )

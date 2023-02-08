@@ -8,6 +8,6 @@ export const StyledCoveredButton = styled.button<ICoveredButtonProps>`
     border: none;
     background-color: transparent;
 
-    position: ${p => p.isOpened? 'absolute':'static'};
-    top: ${p => p.isOpened? '-38':'0'}px;
+    position: ${p => p.isOpened && p.movable? 'absolute':'static'};
+    top: ${p => p.isOpened && p.movable? '-38':'0'}px;
 `

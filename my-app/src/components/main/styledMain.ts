@@ -9,5 +9,6 @@ export const StyledMain = styled.div`
     margin: 20px auto;
     padding: 20px;
     background-color: ${variables.colorDark};
+    color: ${variables.colorFont};
     border-radius: 30px;
 `

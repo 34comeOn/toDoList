@@ -19,5 +19,4 @@ export const StyledDayCard = styled.ul<IisOpenedProps>`
     display: flex;
     align-items: center;
     flex-wrap: no-wrap;
-    // flex-direction: row${p => p.isOpened? '-reverse':''};
 `

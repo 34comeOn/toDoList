@@ -7,6 +7,7 @@ import { Indicator } from "../indicator";
 import variables from '../../sass/variables.module.scss';
 import "./style.scss";
 import { CardDate } from "../cardDate";
+import { TaskItem } from "../taskItem";
 
 export interface IisOpenedProps {
     isOpened: boolean;
@@ -36,6 +37,7 @@ export const DayCard = ({date}: {date:string}) => {
                     {isOpened && <img src={closeCardButton} alt="Close task list button" />}
                 </>
             </CoveredButton>
+            {isOpened && <TaskItem />}
         </StyledDayCard>
     )
 }

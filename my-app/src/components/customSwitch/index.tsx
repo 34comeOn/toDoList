@@ -1,7 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
-
 import ToDoImage from '../../assets/toDoImage.png';
 import DoneImage from '../../assets/doneImage.png';
 import variables from '../../sass/variables.module.scss';

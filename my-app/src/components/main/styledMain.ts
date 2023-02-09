@@ -11,4 +11,5 @@ export const StyledMain = styled.div`
     background-color: ${variables.colorDark};
     color: ${variables.colorFont};
     border-radius: 30px;
+    position: relative;
 `

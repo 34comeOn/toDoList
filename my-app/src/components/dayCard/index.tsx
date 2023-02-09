@@ -8,6 +8,7 @@ import variables from '../../sass/variables.module.scss';
 import "./style.scss";
 import { CardDate } from "../cardDate";
 import { TaskItem } from "../taskItem";
+import { TmockDataList } from "../../mock/mockData";
 
 export interface IisOpenedProps {
     isOpened: boolean;
@@ -17,7 +18,7 @@ export interface IisOpened extends IisOpenedProps{
     children: string;
 }
 
-export const DayCard = ({date}: {date:string}) => {
+export const DayCard = ({date, arrayOfTasks}: {date:string, arrayOfTasks: TmockDataList}) => {
     const [isOpened, setIsOpened] = useState(false);
 
     const toggleClickHandle = () => {

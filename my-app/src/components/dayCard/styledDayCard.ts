@@ -13,7 +13,8 @@ export const StyledDayCard = styled.ul<IisOpenedProps>`
     font-style: normal;
     font-size: 24px;
     line-height: 28px;
-    margin-top: ${p => p.isOpened? '40':'0'}px;
+    margin-top: ${p => p.isOpened? '50':'0'}px;
+    margin-bottom: 32px;
     position: ${p => p.isOpened? 'relative':'static'};
 
     display: flex;

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { StyledMain } from "./styledMain";
 import "./style.scss";
-import { DayCard } from "../dayCard";
 import { CoveredButton } from "../coveredButton";
+import { DaysList } from "../daysList";
 
 export const Main = () => {
     const [isOpened, setIsOpened] = useState(false);
@@ -21,7 +21,7 @@ export const Main = () => {
                     </svg>
                 </CoveredButton>
             </div>
-            <DayCard date={'some day'}/>
+            <DaysList />
         </StyledMain >
     )
 }

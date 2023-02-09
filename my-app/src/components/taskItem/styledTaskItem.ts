@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledTaskItem = styled.li`
     height: 45px;
-    width: 350px;
+    width: 311px;
     padding-right: -10px;
     box-sizing: border-box;
     margin-bottom: 10px;

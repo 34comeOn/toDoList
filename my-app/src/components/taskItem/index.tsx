@@ -3,8 +3,9 @@ import { Indicator } from "../indicator";
 import { StyledTaskItem } from "./styledTaskItem";
 import "./style.scss";
 import { CustomSwitch } from "../customSwitch";
+import { TmockDataItem } from "../../mock/mockData";
 
-export const TaskItem =  () => {
+export const TaskItem = ({task} : {task: TmockDataItem}) => {
     const [isTaskDone, setIsTaskDone] = useState(false);
 
     const taskDoneStatusHandler = () => {
@@ -13,13 +14,13 @@ export const TaskItem =  () => {
 
     return(
         <StyledTaskItem>
-            <Indicator backgroundColor={'red'}/>
+            <Indicator backgroundColor={task.color || 'transparent'}/>
             <div className={'taskItem__text-wrapper'}>
                 <span className={`taskItem__title ${isTaskDone? 'taskItem__title--done':''}`}>
-                    title
+                    {task.title}
                 </span>
                 <p className={'taskItem__text'}>
-                    a lot of text
+                    {`${task.task.slice(0,29)}...`}
                 </p>
             </div>
             <CustomSwitch onChange={taskDoneStatusHandler} aria-label="Switch your task done or to do"/>

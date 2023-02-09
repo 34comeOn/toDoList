@@ -5,12 +5,15 @@ import { DayCard } from "../dayCard";
 import { mockData } from "../../mock/mockData";
 
 export const DaysList = () => {
-    console.log(sortingTasksByDate(mockData))
     return (
         <StyledDaysList>
             {getCurrentCalendarWeek().map((calendarDay, index) => {
                 const arrayOfTasks = sortingTasksByDate(mockData).get(calendarDay);
-
+                if (index === 0) {
+                    calendarDay = 'Today';
+                } else if (index === 1) {
+                    calendarDay = 'Tommorow';
+                }
                 return <DayCard key={index} date={calendarDay} arrayOfTasks={arrayOfTasks}/>
             })}
         </StyledDaysList>

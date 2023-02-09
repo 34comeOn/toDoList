@@ -9,6 +9,7 @@ import "./style.scss";
 import { CardDate } from "../cardDate";
 import { TaskItem } from "../taskItem";
 import { TmockDataList } from "../../mock/mockData";
+import { TasksList } from "../tasksList";
 
 export interface IisOpenedProps {
     isOpened: boolean;
@@ -37,7 +38,7 @@ export const DayCard = ({date, arrayOfTasks}: {date:string, arrayOfTasks: TmockD
                     {isOpened && <img src={closeCardButton} alt="Close task list button" />}
                 </>
             </CoveredButton>
-            {isOpened && <TaskItem />}
+            {isOpened && arrayOfTasks? <TasksList arrayOfTasks={arrayOfTasks}/> : false}
         </StyledDayCard>
     )
 }

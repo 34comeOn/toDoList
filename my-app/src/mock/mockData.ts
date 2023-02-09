@@ -44,6 +44,6 @@ export const mockData:TmockDataList = [
                 in culpa qui officia deserunt mollit anim id est laborum.`,
         date: 1675903155356,
         hasDone: false,
-        color: 'blue',
+        color: 'yellow',
     },
 ];

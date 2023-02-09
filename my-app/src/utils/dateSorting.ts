@@ -2,7 +2,7 @@ import { TmockDataList } from "../mock/mockData";
 
 const CALENDAR_ARRAY = [0,31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const DAYS_IN_WEEK = 7;
-const DAYS_BY_WORDS = 2;
+const DAYS_BY_WORDS = 0;
 
 export const collectsDates = (mockData: TmockDataList) => {
     const dateCollection = new Set();
@@ -36,7 +36,8 @@ export const sortingTasksByDate = (mockData: TmockDataList) => {
 }
 
 export const getCurrentCalendarWeek = () => {
-    const currentCalendarArray = ['Today', 'Tommorow'];
+    // const currentCalendarArray = ['Today', 'Tommorow'];
+    const currentCalendarArray = [];
     
     const today = new Date(Date.now());
     const convertedToday = `${today.getDate()}/${today.getMonth() + 1}`;

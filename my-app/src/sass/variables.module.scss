@@ -1,0 +1,21 @@
+$ff-placeholder-main-regular: "Actor", "Arial", sans-serif;
+$ff-placeholder-main-bold: "AbhayaLibre", "Arial", sans-serif;
+
+$colorDark: #222222;
+$colorCardDark: #282828;
+$colorFont: #F4F4F4;
+$colorIndicatorStock: #A9A9A9;
+$colorTastItemText: rgba(255, 255, 255, 0.6);
+$colorSwitchToDo: #366EFF;
+$colorSwitchDone: #10C200;
+;
+
+:export {
+    colorDark: $colorDark;
+    colorCardDark: $colorCardDark;
+    colorFont: $colorFont;
+    colorIndicatorStock: $colorIndicatorStock;
+    colorTastItemText: $colorTastItemText;
+    colorSwitchToDo: $colorSwitchToDo;
+    colorSwitchDone: $colorSwitchDone;
+}

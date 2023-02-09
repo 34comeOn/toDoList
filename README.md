@@ -8,6 +8,8 @@
 - React Fast Marquee
 - Material UI
 - React-Query
+- SASS
+- Styled-components
 
 ### Основные команды
 - Установка - `npm i`

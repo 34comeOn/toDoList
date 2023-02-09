@@ -7,7 +7,6 @@ import { Indicator } from "../indicator";
 import variables from '../../sass/variables.module.scss';
 import "./style.scss";
 import { CardDate } from "../cardDate";
-import { TaskItem } from "../taskItem";
 import { TmockDataList } from "../../mock/mockData";
 import { TasksList } from "../tasksList";
 
